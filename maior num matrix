@@ -1,0 +1,27 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+   float vetor [4]={0.0,0.5,1.0,0.8};
+   float v_max;
+   int v_var;
+   v_max=vetor[0];
+   v_var=0;
+   while(v_var<4){
+       if(v_max<vetor[v_var]){
+           v_max=vetor[v_var];
+           
+       }
+           v_var++;
+       }
+    printf("%.2f", v_max);   
+    return 0;
+}
